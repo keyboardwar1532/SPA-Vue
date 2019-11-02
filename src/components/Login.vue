@@ -28,6 +28,7 @@ export default {
       this.$http.post(api, {email: this.email, password: this.password}).then(response => {
         console.log(response.data.token)
         localStorage.setItem('JWT_TOKEN', response.data.token)
+        this.$router.push('/')
       })
     }
   }

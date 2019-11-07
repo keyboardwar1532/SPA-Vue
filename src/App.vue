@@ -7,13 +7,7 @@
 
 <script>
 export default {
-  name: 'App',
-  created () {
-    const api = '//198.177.122.149/cafe/chat/public/api/auth/me'
-    this.$http.get(api).then(response => {
-      console.log(response)
-    })
-  }
+  name: 'App'
 }
 </script>
 

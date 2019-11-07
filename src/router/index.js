@@ -4,6 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import Test from '@/components/Test'
 import Login from '@/components/Login'
 import Logout from '@/components/Logout'
+import Add from '@/components/Add'
+import Edit from '@/components/Edit'
 
 Vue.use(Router)
 const routes = [
@@ -21,6 +23,17 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/add',
+    name: 'Add',
+    component: Add
+  },
+  {
+    path: '/edit/:id',
+    name: 'Edit',
+    props: true,
+    component: Edit
   },
   {
     path: '/logout',

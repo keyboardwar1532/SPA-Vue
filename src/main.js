@@ -11,9 +11,7 @@ axios.interceptors.request.use(
   config => {
     if (localStorage.getItem('JWT_TOKEN')) {
       config.headers.Authorization = 'Bearer' + localStorage.getItem('JWT_TOKEN')
-      console.log('request')
     }
-    console.log(localStorage.getItem('JWT_TOKEN'))
     return config
   },
   err => {

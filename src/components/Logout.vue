@@ -9,7 +9,7 @@ export default {
     const api = '//198.177.122.149/cafe/chat/public/api/auth/logout'
     this.$http.post(api).then(response => {
       localStorage.removeItem('JWT_TOKEN')
-      console.log(response)
+      this.$router.push('/login')
     })
   }
 }
